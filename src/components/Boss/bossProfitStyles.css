@@ -1,0 +1,24 @@
+.centered-text {
+  text-align: center;
+}
+
+.centered-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.centered-table th,
+.centered-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.centered-table th {
+  background-color: #f2f2f2;
+}
+
+.centered-table img {
+  display: block;
+  margin: 0 auto;
+}

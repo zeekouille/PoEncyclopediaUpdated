@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .App {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: fixed;
+    height: 100%;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .sidebar ul li ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  
+  .sidebar ul li ul li {
+    margin: 5px 0;
+  }
+  
+  .sidebar ul li a.sub-link {
+    font-weight: normal;
+    font-size: 0.9em;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #007BFF;
+  }
+  
+  .sidebar ul li.separator {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+    padding-top: 10px;
+  }
+  
+  .main-content {
+    margin-left: 220px; /* Adjust based on the width of the sidebar */
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  .main-content section {
+    margin-bottom: 20px;
+  }
+  
+  .main-content h1 {
+    color: #333;
+  }
+  
+  .main-content h2 {
+    color: #333;
+  }
+  
+  .main-content p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .priceInputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; /* Adjust as needed for spacing between elements */
+  }
+  
+  .priceInputContainer img {
+    margin-bottom: 5px; /* Adjust as needed for spacing between the image and the input */
+  }
+  
+  .priceInputContainer input {
+    text-align: center;
+  }
+  
+  .priceRow {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically if needed */
+    gap: 10px; /* Space between the items */
+  }
+  

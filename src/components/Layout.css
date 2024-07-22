@@ -1,0 +1,40 @@
+.App {
+  display: flex;
+  padding-top: 56px; /* Si vous avez un en-tête ou une autre barre en haut, ajustez en conséquence */
+  height: 100vh; /* Assurez-vous que la hauteur de l'élément principal est 100% de la hauteur de la fenêtre */
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  overflow-y: auto; /* Ajoute une barre de défilement verticale lorsque le contenu dépasse la hauteur de la barre latérale */
+  height: calc(100vh - 40px); /* Hauteur totale moins la marge inférieure */
+  margin-bottom: 20px; /* Marge inférieure pour éviter que le contenu ne soit caché */
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.separator {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.sub-link-container {
+  margin-left: 20px;
+  transition: background-color 0.3s ease; /* Durée et effet de la transition */
+}
+
+.sub-link-container:hover {
+  background-color: #ff5733; /* La nouvelle couleur de fond lorsque l'élément est survolé */
+}
+
+.sub-link-container a {
+  text-decoration: none;
+  color: inherit; /* Inhère la couleur de l'élément parent */
+  display: block; /* Pour que le lien prenne tout l'espace de la div */
+  padding: 10px; /* Ajustez le padding selon vos préférences */
+}
