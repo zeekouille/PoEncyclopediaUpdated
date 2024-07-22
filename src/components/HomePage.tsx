@@ -6,20 +6,11 @@ function App() {
   return (
 <Layout>
 <section id="crafting">
-          <h1>Crafting</h1>
-          <p>Contenu pour la section crafting...</p>
-          <section id="tsbow">
-            <h2>TSBOW</h2>
-            <p>Contenu pour la section TSBOW...</p>
-          </section>
-        </section>
-        <section id="boss-profit">
-          <h1>Boss Profit</h1>
-          <p>Contenu pour la section boss profit...</p>
-          <section id="shaper">
-            <h2>Shaper</h2>
-            <p>Contenu pour la section shaper...</p>
-          </section>
+<img 
+          src="https://media1.tenor.com/m/CqVDj9Ra1l4AAAAC/morsay-héoui.gif" 
+          alt="Morsay Héoui" 
+          style={{ width: '95%', height: 'auto' }} 
+        />
         </section>
 </Layout>
   );

@@ -15,10 +15,21 @@
 }
 
 .centered-table th {
-  background-color: #f2f2f2;
+  background-color: #590064; /* Couleur rose vif pour l'en-tête */
+  color: white; /* Texte blanc pour les en-têtes */
+}
+
+.centered-table tr:nth-child(even) {
+  background-color: #212529; /* Couleur rose pâle pour les lignes paires */
+}
+
+.centered-table tr:nth-child(odd) {
+  background-color: #212529; /* Couleur blanche pour les lignes impaires */
 }
 
 .centered-table img {
+  max-width: 50px; /* Limiter la taille des images */
+  max-height: 50px; /* Limiter la hauteur des images */
   display: block;
   margin: 0 auto;
 }

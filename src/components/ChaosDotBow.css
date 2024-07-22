@@ -1,29 +1,36 @@
-/* Assurez-vous que le fichier CSS est bien importé dans votre composant */
-
+/* Conteneur principal */
 .content-container {
-    padding-bottom: 80px; /* Ajustez cette valeur en fonction de la hauteur de vos boutons */
-  }
-  
-  .step-navigation {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-    z-index: 1000;
-  }
-  
-  .step-button {
-    background: transparent; /* Retirer le fond */
-    border: 1px solid #ccc; /* Ajouter une bordure si nécessaire */
-    color: #000; /* Couleur du texte */
-  }
-  
-  .step-button:disabled {
-    color: #999; /* Couleur du texte pour les boutons désactivés */
-    border: 1px solid #ddd; /* Bordure plus claire pour les boutons désactivés */
-  }
-  
+  padding-bottom: 80px; /* Ajustez cette valeur en fonction de la hauteur des boutons */
+}
+
+/* Conteneur de navigation des étapes */
+.step-navigation {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centre le conteneur horizontalement */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centre les éléments verticalement */
+  gap: 1rem;
+  padding: 1rem;
+  /* Retirer la couleur de fond ou utiliser une transparence */
+  background: transparent; 
+
+  z-index: 1000;
+  width: 100%; /* Assurez-vous que le conteneur utilise la largeur entière */
+}
+
+/* Style des boutons */
+.step-button {
+  background: transparent; /* Fond transparent pour les boutons */
+
+  color: #000; /* Couleur du texte */
+  padding: 0.5rem 1rem; /* Padding pour confort */
+}
+
+.step-button:disabled {
+  background: transparent; /* Fond transparent pour les boutons désactivés */
+  color: #999; /* Couleur du texte pour les boutons désactivés */
+
+}

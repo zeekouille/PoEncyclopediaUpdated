@@ -6,16 +6,37 @@
 
 .sidebar {
   width: 200px;
-  background-color: #f4f4f4;
+  background-color: #212529; /* Couleur de fond sombre */
   padding: 20px;
   overflow-y: auto; /* Ajoute une barre de défilement verticale lorsque le contenu dépasse la hauteur de la barre latérale */
   height: calc(100vh - 40px); /* Hauteur totale moins la marge inférieure */
   margin-bottom: 20px; /* Marge inférieure pour éviter que le contenu ne soit caché */
+  scrollbar-color: #343a40 #212529; /* Couleur du pouce et de la piste pour Firefox */
+  scrollbar-width: thin; /* Épaisseur de la barre de défilement */
+}
+
+/* Styles pour la barre de défilement pour les navigateurs basés sur WebKit (Chrome, Safari) */
+.sidebar::-webkit-scrollbar {
+  width: 8px; /* Largeur de la barre de défilement */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #212529; /* Couleur de fond de la piste de défilement */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #343a40; /* Couleur de la partie glissante de la barre de défilement */
+  border-radius: 4px; /* Coins arrondis pour un effet plus moderne */
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #495057; /* Couleur de la partie glissante lorsque l'on survole avec la souris */
 }
 
 .main-content {
   flex-grow: 1;
   padding: 20px;
+  
 }
 
 .separator {
@@ -23,18 +44,69 @@
   margin: 10px 0;
 }
 
+/* Nouveau CSS pour le centrage des liens et des conteneurs */
 .sub-link-container {
   margin-left: 20px;
+  
   transition: background-color 0.3s ease; /* Durée et effet de la transition */
+  text-align: center; /* Centre le texte dans le conteneur */
 }
 
 .sub-link-container:hover {
-  background-color: #ff5733; /* La nouvelle couleur de fond lorsque l'élément est survolé */
+  background-color: #590064; /* La nouvelle couleur de fond lorsque l'élément est survolé */
 }
 
 .sub-link-container a {
   text-decoration: none;
-  color: inherit; /* Inhère la couleur de l'élément parent */
+  color: #ffffff; /* Couleur du texte en blanc */
   display: block; /* Pour que le lien prenne tout l'espace de la div */
   padding: 10px; /* Ajustez le padding selon vos préférences */
+  width: 100%; /* Assure que le lien occupe toute la largeur du conteneur */
+  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+/* Assure le centrage des liens lorsqu'ils sont dans des conteneurs flexibles */
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.d-flex.justify-content-center {
+  display: flex;
+  justify-content: center;
+  text-align: center; /* Centre le texte dans le conteneur flex */
+}
+
+/* Ajout de styles pour les éléments de la barre latérale */
+.sidebar ul {
+  list-style: none; /* Retire les puces des éléments de liste */
+  padding: 0; /* Retire le padding par défaut des éléments de liste */
+}
+
+.sidebar li {
+  color: #ffffff; /* Couleur du texte en blanc pour les éléments de liste */
+  margin: 5px 0; /* Marge entre les éléments de liste */
+}
+
+.sidebar li span {
+  color: #ffffff; /* Couleur du texte en blanc pour les titres des sections */
+  font-weight: bold; /* Rend le texte des titres plus épais */
+}
+
+/* Assurez-vous que les liens à l'intérieur de la barre latérale sont en blanc */
+.sidebar .sub-link-container a {
+  text-decoration: none;
+  color: #ffffff; /* Couleur du texte en blanc */
+  display: block; /* Pour que le lien prenne tout l'espace de la div */
+  padding: 10px; /* Ajustez le padding selon vos préférences */
+  width: 100%; /* Assure que le lien occupe toute la largeur du conteneur */
+  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+/* Rendre les liens en blanc même lorsqu'ils sont dans des conteneurs flexibles */
+.d-flex.justify-content-center a {
+  color: #ffffff; /* Assure que le texte reste blanc */
 }

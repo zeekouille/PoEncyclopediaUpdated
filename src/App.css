@@ -1,0 +1,14 @@
+/* App.css */
+
+
+body {
+    background-color: #121212; /* Couleur d'arrière-plan sombre */
+    color: #a02323; /* Couleur du texte pour contraster avec le fond */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Police de caractère */
+  }
+  
+  #root {
+    min-height: 100vh; /* Assure que l'élément root occupe au moins toute la hauteur de la fenêtre */
+  }
+  

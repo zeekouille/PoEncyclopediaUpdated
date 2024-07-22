@@ -8,7 +8,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="App">
+    <div className="App" >
       <div className="sidebar">
            <ul>
           <li>
@@ -24,43 +24,43 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <span>Boss Profit</span>
             <ul>
               <li className="sub-link-container">
-                <Link to="/bossprofit/shaper">Shaper</Link>
+                <Link to="/bossprofit/shaper" className="d-flex justify-content-center">Shaper</Link>
               </li>
               <li className="sub-link-container">
-                <Link to="/bossprofit/uberShaper">Uber Shaper</Link>
+                <Link to="/bossprofit/uberShaper" className="d-flex justify-content-center">Uber Shaper</Link>
               </li>
               <li className="sub-link-container">
-                <Link to="/bossprofit/maven">Maven</Link>
+                <Link to="/bossprofit/maven" className="d-flex justify-content-center">Maven</Link>
               </li>
               <li className="sub-link-container">
-                <Link to="/bossprofit/uberMaven">Uber Maven</Link>
+                <Link to="/bossprofit/uberMaven" className="d-flex justify-content-center">Uber Maven</Link>
               </li>
               <li className="sub-link-container">
-                <Link to="/bossprofit/sirus">Sirus</Link>
+                <Link to="/bossprofit/sirus" className="d-flex justify-content-center">Sirus</Link>
               </li>
               <li className="sub-link-container">
-                <Link to="/bossprofit/UberSirus">Uber Sirus</Link>
+                <Link to="/bossprofit/UberSirus" className="d-flex justify-content-center" >Uber Sirus</Link>
               </li>
               <li className="sub-link-container">
-                <Link to="/bossprofit/elder">Elder</Link>
+                <Link to="/bossprofit/elder" className="d-flex justify-content-center">Elder</Link>
               </li>
               <li className="sub-link-container">
-                <Link to="/bossprofit/uberElder">Uber Elder</Link>
+                <Link to="/bossprofit/uberElder" className="d-flex justify-content-center">Uber Elder</Link>
               </li>
               <li className="sub-link-container">
-                <Link to="/bossprofit/uberUberElder">Uber Uber Elder</Link>
+                <Link to="/bossprofit/uberUberElder" className="d-flex justify-content-center">Uber Uber Elder</Link>
               </li>
               <li className="sub-link-container">
-                <Link to="/bossprofit/eaterOfWorlds">Eater Of Worlds</Link>
+                <Link to="/bossprofit/eaterOfWorlds" className="d-flex justify-content-center">Eater Of Worlds</Link>
               </li>
               <li className="sub-link-container">
-                <Link to="/bossprofit/uberEaterOfWorlds">Uber Eater Of Worlds</Link>
+                <Link to="/bossprofit/uberEaterOfWorlds" className="d-flex justify-content-center">Uber Eater Of Worlds</Link>
               </li>
               <li className="sub-link-container">
-                <Link to="/bossprofit/theSearingExarch">The Searing Exarch</Link>
+                <Link to="/bossprofit/theSearingExarch" className="d-flex justify-content-center">The Searing Exarch</Link>
               </li>
               <li className="sub-link-container">
-                <Link to="/bossprofit/uberTheSearingExarch">Uber The Searing Exarch</Link>
+                <Link to="/bossprofit/uberTheSearingExarch" className="d-flex justify-content-center">Uber The Searing Exarch</Link>
               </li>
             </ul>
           </li>
@@ -75,7 +75,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </li>
         </ul>
       </div>
-      <div className="main-content">
+      <div className="main-content" >
         {children}
       </div>
     </div>
